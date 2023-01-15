@@ -1,0 +1,71 @@
+:root {
+    --blue: #293241;
+    --red: #EE6B4D;
+    --green: #4dee7d94;
+    --lightsky: #DFFBFC;
+    --sky: #9BC0D9;
+    --lightblue: #3D5B81;
+}
+
+@font-face {
+    font-family: light;
+    src: url(../fonts/bpg_nateli.ttf);
+}
+
+html {
+    cursor: none;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+body {
+    background-color: var(--blue);
+    overflow: hidden;
+    font-family: light;
+    font-weight: bold;
+}
+
+h1, button {
+    font-weight: bold !important;
+}
+
+.circle {
+    background-color: var(--sky);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 25rem;
+    /* transition: 0.3s; */
+}
+
+.target, .targets {
+    position: absolute;
+    z-index: 1;
+    color: var(--blue);
+}
+
+.target span, .targets span {
+    font-size: 40px;
+}
+
+.results, .intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.results {
+    background-color: var(--green);
+}

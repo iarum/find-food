@@ -63,7 +63,7 @@ $(document).ready(function () {
     }
 
     let mouse = { x: 0, y: 0 }
-    $(document).mousemove(function (e) {
+    $(document).touchmove(function (e) {
         mouse.x = e.pageX
         mouse.y = e.pageY
 
